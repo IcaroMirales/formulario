@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com validação</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/images/favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <main class="container">
+        <div class="info">
+            <h1 class="titulo">
+                FICOU COM DÚVIDA? <br>
+                NOS MANDE UMA MENSAGEM!
+            </h1>
+            <p class="text">
+                caso tenha ficado com qualquer dúvida basta nos<br>
+                mandar uma mensagem e entraremos em contato<br>
+                em menos de 24h.
+            </p>
+        </div>
+
+        <div class="formulario">
+            <input type="text"  name="campo" placeholder="Nome completo *" maxlength="50" >
+
+            <input type="email" name="campo" placeholder="Email *" maxlength="35">
+
+            <input type="text" name="campo" placeholder="Telefone *" maxlength="13" pattern="[0-9]*" inputmode="numeric" onkeypress="return /[0-9]/i.test(event.key)">
+
+            <textarea name="campo" id="mensagem" placeholder="Mensagem *" ></textarea>
+
+            <div class="campo-obrigatorio"></div>
+
+            <button class="enviar">Enviar</button>
+        </div>
+
+        <script src="src/js/index.js"></script>
+    </main>
+    
+</body>
+</html>

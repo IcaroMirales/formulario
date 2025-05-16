@@ -1,0 +1,78 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../images/bg-repeat.jpg);
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  max-width: 50rem;
+  color: #FFFFFF;
+  margin-right: 6rem;
+}
+
+.info .titulo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.info .text {
+  font-size: 2rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 36rem;
+  height: 37.5rem;
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+input {
+  margin-bottom: 1.5rem;
+  padding: 0.9rem;
+  outline: none;
+}
+
+textarea{
+  height: 10rem;
+  padding: 0.8rem;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.campo-obrigatorio {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.enviar {
+  border: none;
+  border-radius: 5px;
+  padding: 1.2rem 0;
+  background-color: #3CCC87;
+  color: #FFFFFF;
+}
+
+.enviar:hover {
+  cursor: pointer;
+}
+
+.campo-preenchido {
+  border: #00C22B solid 1px;
+}
+
+.campo-vazio {
+  border: #F52E2E solid 1px;
+}
