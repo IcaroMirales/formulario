@@ -14,7 +14,7 @@ body {
 }
 
 .info {
-  max-width: 50rem;
+  width: 50rem;
   color: #FFFFFF;
   margin-right: 6rem;
 }
@@ -76,3 +76,4 @@ textarea{
 .campo-vazio {
   border: #F52E2E solid 1px;
 }
+
