@@ -27,13 +27,19 @@
         </div>
 
         <div class="formulario">
-            <input type="text"  name="campo" placeholder="Nome completo *" maxlength="50" >
+            <input type="text"  class="campo" placeholder="Nome completo *" maxlength="50" >
 
-            <input type="email" name="campo" placeholder="Email *" maxlength="35">
+            <div class="campo-obrigatorio"></div>
 
-            <input type="text" name="campo" placeholder="Telefone *" maxlength="13" pattern="[0-9]*" inputmode="numeric" onkeypress="return /[0-9]/i.test(event.key)">
+            <input type="email" class="campo" placeholder="Email *" maxlength="35">
+            
+            <div class="campo-obrigatorio"></div>
 
-            <textarea name="campo" id="mensagem" placeholder="Mensagem *" ></textarea>
+            <input type="text" class="campo" placeholder="Telefone *" maxlength="13" pattern="[0-9]*" inputmode="numeric" onkeypress="return /[0-9]/i.test(event.key)">
+
+            <div class="campo-obrigatorio"></div>
+
+            <textarea class="campo" id="mensagem" placeholder="Mensagem *" ></textarea>
 
             <div class="campo-obrigatorio"></div>
 
